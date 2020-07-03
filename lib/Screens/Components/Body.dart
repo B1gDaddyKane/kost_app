@@ -8,12 +8,17 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     // Gives us size of screen, (context)
     Size size = MediaQuery.of(context).size;
-    return Background(child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
+    return Background(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
         Text("THE PLATE"
-        ),
-        RoundedButton()
+          ),
+        RoundedButton(
+          text: "LOGIN",
+          press: () {},
+        )
       ],
     ),
     );
@@ -28,20 +33,20 @@ class RoundedButton extends StatelessWidget {
     Key key, this.text, this.press, this.color = primecolor, this.textColor,
   }) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
       width: size.width * 0.6,
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(40),
         child: FlatButton(
-            padding: EdgeInsets.symmetric(vertical: 30, horizontal: 50),
-            color: primecolor,
-            onPressed: (){},
-            child: Text("Login")),
+            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+            color: color,
+            onPressed: press,
+            child: Text(text),
       ),
+     ),
     );
   }
 }
