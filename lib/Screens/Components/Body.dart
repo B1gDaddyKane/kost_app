@@ -9,18 +9,19 @@ class Body extends StatelessWidget {
     // Gives us size of screen, (context)
     Size size = MediaQuery.of(context).size;
     return Background(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-        Text("THE PLATE"
-          ),
-        RoundedButton(
-          text: "LOGIN",
-          press: () {},
-        )
-      ],
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+          Text("THE PLATE"
+            ),
+          RoundedButton(
+            text: "LOGIN",
+            press: () {},
+          )
+        ],
     ),
+      ),
     );
   }
 }
