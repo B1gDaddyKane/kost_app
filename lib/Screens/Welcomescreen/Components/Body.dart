@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kostapp/Components/RoundedButton.dart';
 import 'package:kostapp/Screens/LoginScreen/LoginScreen.dart';
+import 'package:kostapp/Screens/SignupScreen/SignupScreen.dart';
 import 'package:kostapp/Screens/Welcomescreen/Components/Background.dart';
 import 'package:kostapp/constants.dart';
 
@@ -32,7 +33,16 @@ class Body extends StatelessWidget {
           ),
             RoundedButton(
               text: "SIGNUP",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context){
+                      return SignupScreen();}
+                    ,)
+                  ,)
+                ;
+              },
               color: primecolor
             )
         ],

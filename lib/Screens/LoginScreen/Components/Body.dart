@@ -11,30 +11,35 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Background(child: Column(
-      children: <Widget>[
-        Text(
-          "LOGIN"
-        ),
-        TextFieldContainer(
-          child: TextField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.person, color: Colors.black),
-              hintText: "Email"
-            ),
+    return Background(child: Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            "LOGIN"
           ),
-          color: primecolor,
-        ),
-        TextFieldContainer(
-          child: TextField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.lock, color: Colors.black,),
-              hintText: "Password"
+          TextFieldContainer(
+            child: TextField(
+              decoration: InputDecoration(
+                icon: Icon(Icons.person, color: Colors.black),
+                hintText: "Email"
+              ),
             ),
+            color: primecolor,
           ),
-        )
-      ],
-    ));
+          TextFieldContainer(
+            child: TextField(
+              decoration: InputDecoration(
+                icon: Icon(Icons.lock, color: Colors.black,),
+                hintText: "Password"
+              ),
+            ),
+            color: primecolor,
+          ),
+        ],
+      ),
+    )
+    );
   }
 }
 
