@@ -13,72 +13,75 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Background(child: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
+      child: SingleChildScrollView(
 
-          Text(
-            "SIGNUP"
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
 
-          TextFieldContainer(
-            child: TextField(
-              decoration: InputDecoration(
-                  icon: Icon(Icons.person, color: Colors.black,),
-                  hintText: "Name"
-              ),
+            Text(
+              "SIGNUP"
             ),
-            color: primecolor,
-          ),
 
-          TextFieldContainer(
-            child: TextField(
-              decoration: InputDecoration(
-                  icon: Icon(Icons.person, color: Colors.black,),
-                  hintText: "Surname"
+            TextFieldContainer(
+              child: TextField(
+                decoration: InputDecoration(
+                    icon: Icon(Icons.person, color: Colors.black,),
+                    hintText: "Name"
+                ),
               ),
+              color: primecolor,
             ),
-            color: primecolor,
-          ),
 
-          TextFieldContainer(
-            child: TextField(
-              decoration: InputDecoration(
-                icon: Icon(Icons.mail, color: Colors.black,),
-                hintText: "Email"
+            TextFieldContainer(
+              child: TextField(
+                decoration: InputDecoration(
+                    icon: Icon(Icons.person, color: Colors.black,),
+                    hintText: "Surname"
+                ),
               ),
+              color: primecolor,
             ),
-            color: primecolor,
-          ),
 
-          TextFieldContainer(
-            child: TextField(
-              decoration: InputDecoration(
-                  icon: Icon(Icons.lock, color: Colors.black,),
-                  hintText: "Password"
+            TextFieldContainer(
+              child: TextField(
+                decoration: InputDecoration(
+                  icon: Icon(Icons.mail, color: Colors.black,),
+                  hintText: "Email"
+                ),
               ),
+              color: primecolor,
             ),
-            color: primecolor,
-          ),
 
-          TextFieldContainer(
-            child: TextField(
-              decoration: InputDecoration(
-                  icon: Icon(Icons.lock, color: Colors.black,),
-                  hintText: "Password again"
+            TextFieldContainer(
+              child: TextField(
+                decoration: InputDecoration(
+                    icon: Icon(Icons.lock, color: Colors.black,),
+                    hintText: "Password"
+                ),
               ),
+              color: primecolor,
             ),
-            color: primecolor,
-          ),
 
-          RoundedButton(
-            text:"CREATE",
-            press: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) {return MeasurementScreen();}));
-            },
-            color: primecolor,
-          )
-        ],
+            TextFieldContainer(
+              child: TextField(
+                decoration: InputDecoration(
+                    icon: Icon(Icons.lock, color: Colors.black,),
+                    hintText: "Password again"
+                ),
+              ),
+              color: primecolor,
+            ),
+
+            RoundedButton(
+              text:"CREATE",
+              press: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) {return MeasurementScreen();}));
+              },
+              color: primecolor,
+            )
+          ],
+        ),
       ),
     )
     );
