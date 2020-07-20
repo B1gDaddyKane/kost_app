@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget{
       title: 'The Plate',
       theme: ThemeData(
         primaryColor: primecolor,
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: background,
       ),
       home: WelcomeScreen(),
     );

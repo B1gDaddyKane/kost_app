@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kostapp/constants.dart';
 
 class Background extends StatelessWidget {
   final Widget child;
@@ -19,12 +20,12 @@ class Background extends StatelessWidget {
           Positioned(
             top: -100,
             right: -150,
-            child: Image.asset("Assets/Pictures/welcome_top.png"),
+            child: Image.asset("Assets/Pictures/welcome_top.png",color: lightprimecolor),
           ),
           Positioned(
             bottom: -20,
             left: -50,
-            child: Image.asset("Assets/Pictues/welcome_bottom.png"),
+            child: Image.asset("Assets/Pictues/welcome_bottom.png",color: lightprimecolor),
           ),
           child
         ],

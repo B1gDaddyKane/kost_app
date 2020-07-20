@@ -14,7 +14,6 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Background(child: Center(
       child: SingleChildScrollView(
-
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -26,8 +25,12 @@ class Body extends StatelessWidget {
             TextFieldContainer(
               child: TextField(
                 decoration: InputDecoration(
-                    icon: Icon(Icons.person, color: Colors.black,),
-                    hintText: "Name"
+                    border: InputBorder.none,
+                    icon: Icon(Icons.person, color: lightprimecolor),
+                    hintText: "Name",
+                    hintStyle: TextStyle(
+                    color: lightprimecolor
+                  )
                 ),
               ),
               color: primecolor,
@@ -36,8 +39,12 @@ class Body extends StatelessWidget {
             TextFieldContainer(
               child: TextField(
                 decoration: InputDecoration(
-                    icon: Icon(Icons.person, color: Colors.black,),
-                    hintText: "Surname"
+                    border: InputBorder.none,
+                    icon: Icon(Icons.person, color: lightprimecolor),
+                    hintText: "Surname",
+                    hintStyle: TextStyle(
+                        color: lightprimecolor
+                    )
                 ),
               ),
               color: primecolor,
@@ -46,8 +53,12 @@ class Body extends StatelessWidget {
             TextFieldContainer(
               child: TextField(
                 decoration: InputDecoration(
-                  icon: Icon(Icons.mail, color: Colors.black,),
-                  hintText: "Email"
+                  border: InputBorder.none,
+                  icon: Icon(Icons.mail, color: lightprimecolor),
+                  hintText: "Email",
+                  hintStyle: TextStyle(
+                    color: lightprimecolor
+                  )
                 ),
               ),
               color: primecolor,
@@ -56,8 +67,12 @@ class Body extends StatelessWidget {
             TextFieldContainer(
               child: TextField(
                 decoration: InputDecoration(
-                    icon: Icon(Icons.lock, color: Colors.black,),
-                    hintText: "Password"
+                    border: InputBorder.none,
+                    icon: Icon(Icons.lock, color: lightprimecolor),
+                    hintText: "Password",
+                    hintStyle: TextStyle(
+                        color: lightprimecolor
+                    )
                 ),
               ),
               color: primecolor,
@@ -66,8 +81,12 @@ class Body extends StatelessWidget {
             TextFieldContainer(
               child: TextField(
                 decoration: InputDecoration(
-                    icon: Icon(Icons.lock, color: Colors.black,),
-                    hintText: "Password again"
+                    border: InputBorder.none,
+                    icon: Icon(Icons.lock, color: lightprimecolor),
+                    hintText: "Password again",
+                    hintStyle: TextStyle(
+                        color: lightprimecolor
+                    )
                 ),
               ),
               color: primecolor,
@@ -75,6 +94,7 @@ class Body extends StatelessWidget {
 
             RoundedButton(
               text:"CREATE",
+              textColor: lightprimecolor,
               press: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) {return MeasurementScreen();}));
               },

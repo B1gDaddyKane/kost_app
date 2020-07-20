@@ -10,41 +10,54 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Gives us size of screen, (context)
-    Size size = MediaQuery.of(context).size;
     return Background(
       child: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-          Text("THE PLATE"
+            Container(
+              child: Text(
+                "PLATEFUL",
+                style: TextStyle(
+                  fontSize: 40,
+                  color: primecolor,
+                ),
+              ),
             ),
-          RoundedButton(
-            text: "LOGIN",
-            press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context){
-                    return LoginScreen();}
-                    ,)
-                ,)
-              ;},
-            color: primecolor
-          ),
+
             RoundedButton(
-              text: "SIGNUP",
+              text: "LOG IN",
+              textColor: lightprimecolor,
+              bottomMargin: 0,
+              topMargin: 10,
               press: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context){
-                      return SignupScreen();}
-                    ,)
+                      return LoginScreen();}
+                      ,)
                   ,)
-                ;
-              },
+                ;},
               color: primecolor
-            )
+            ),
+              RoundedButton(
+                text: "SIGN UP",
+                textColor: lightprimecolor,
+                bottomMargin: 100,
+                topMargin: 20,
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context){
+                        return SignupScreen();}
+                      ,)
+                    ,)
+                  ;
+                },
+                color: primecolor
+              )
         ],
     ),
       ),

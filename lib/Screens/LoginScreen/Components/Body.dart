@@ -16,13 +16,21 @@ class Body extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            "LOGIN"
+            "LOGIN",
+            style: TextStyle(
+              color: primecolor,
+              fontSize: 30,
+            ),
           ),
           TextFieldContainer(
             child: TextField(
               decoration: InputDecoration(
-                icon: Icon(Icons.person, color: Colors.black),
-                hintText: "Email"
+                border: InputBorder.none,
+                icon: Icon(Icons.person, color: lightprimecolor),
+                hintText: "Email",
+                hintStyle: TextStyle(
+                    color: lightprimecolor
+                ),
               ),
             ),
             color: primecolor,
@@ -30,8 +38,12 @@ class Body extends StatelessWidget {
           TextFieldContainer(
             child: TextField(
               decoration: InputDecoration(
-                icon: Icon(Icons.lock, color: Colors.black,),
-                hintText: "Password"
+                border: InputBorder.none,
+                icon: Icon(Icons.lock, color: lightprimecolor),
+                hintText: "Password",
+                hintStyle: TextStyle(
+                  color: lightprimecolor
+                ),
               ),
             ),
             color: primecolor,
