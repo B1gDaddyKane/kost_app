@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "500436583791",
+    "firebase_url": "https://kostplantest.firebaseio.com",
+    "project_id": "kostplantest",
+    "storage_bucket": "kostplantest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500436583791:android:b9f249e8ca1168d922149a",
+        "android_client_info": {
+          "package_name": "tester.kostapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500436583791-lvlip8p42riuhq4f1r2hdffd9ebppt6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACiime_J861CA-TUsG1cYqD0u1L2WI0hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500436583791-lvlip8p42riuhq4f1r2hdffd9ebppt6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
