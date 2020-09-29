@@ -9,7 +9,6 @@ import 'package:kostapp/constants.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Gives us size of screen, (context)
     return Background(
       child: Center(
         child: Column(
